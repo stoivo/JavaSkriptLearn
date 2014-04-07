@@ -1,31 +1,59 @@
 <!DOCTYPE HTML>
 <html>
 <head>
+<style>
+#div1 {width:350px;height:150px;padding:10px;border:1px solid #aaaaaa;}
+</style>
 <script>
-function allowDrop(ev)
-{
-ev.preventDefault();
-}
-
-function drag(ev)
-{
-ev.dataTransfer.setData("Text",ev.target.id);
-}
-
-function drop(ev)
-{
-ev.preventDefault();
-var data = ev.dataTransfer.getData("Text");
-ev.target.appendChild(document.getElementById(data));
-}
+	function allowDrop(ev){
+		ev.preventDefault();
+	}
+	
+	function drag(ev){
+		ev.dataTransfer.setData("Text",ev.target.id);
+	}
+	
+	function drop(ev){
+		ev.preventDefault();
+		var data=ev.dataTransfer.getData("Text");
+		ev.target.appendChild(document.getElementById(data));
+	}
 </script>
 </head>
 <body>
 
-<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<p>Drag the W3Schools image into the rectangle:</p>
 
-<img id="drag1" src="img_logo.gif" draggable="true"
-ondragstart="drag(event)" width="336" height="69"
+<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<br>
+<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<br>
+
+
+<table>
+	<tr>
+		<th>1</th>
+		<th>2</th>
+		<th>3</th>
+	</tr>
+	<tr>
+		<th>4</th>
+		<th>5</th>
+		<th>6</th>
+	</tr>
+	<td>
+		<th>7</th>
+		<th>8</th>
+		<th>9</th>
+	</tr>
+</table>
+
+
+<div draggable="true" ondragstart="drag(event)" id="drag1">
+	<p>Simon</p>
+	<img src="img_logo.gif"  width="336" height="69">
+</div>
+
 
 </body>
 </html>
