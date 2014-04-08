@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>arra</title>
+</head>
+<body>
+<script type="text/javascript">
+	var first = true;
+
+	var n = [];
+	n.sort();
+	var  e = function () {	
+
+	 	var pir = prompt("Enter pie!","Enetr here");
+	 	n.push(pir)
+
+		if (first) {
+			document.write("<p style='background-color:green;' onclick='e();'>array consist off:"+ n.join(" - ") +"</p>")
+		} else{
+			document.write("<p style='background-color:green;' onclick='e();'>ADD more: array consist off:"+ n.join(" - ") +"</p>")
+		};
+		
+		first = false;
+	 	// document.write("Hello, "+pir);
+	} 
+
+</script>
+<p style="background-color:green;" onclick="e();">Click me to begin</p>
+</body>
+</html>
