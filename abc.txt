@@ -3,6 +3,7 @@ b
 c
 d
 e
+f
 test purpose line
 test purpose line 2
 more lines
