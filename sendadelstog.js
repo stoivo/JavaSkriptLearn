@@ -13,3 +13,6 @@ while (run) {
 var string = document.getElementsByClassName('relative_time')[0].innerHTML;
 var arrat = string.split(" ");
 var time = arrat[arrat.length-1]
+
+
+console.log
