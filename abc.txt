@@ -4,6 +4,8 @@ c
 d
 e
 f
+g
+h
 test purpose line
 test purpose line 2
 more lines
