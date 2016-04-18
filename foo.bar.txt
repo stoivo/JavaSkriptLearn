@@ -1,1 +1,5 @@
 Simon er ferdig og litt mere til slutt
+foo
+bar
+baz
+simon
