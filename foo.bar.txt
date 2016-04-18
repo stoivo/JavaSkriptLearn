@@ -1,1 +1,2 @@
 Simon er ferdig og litt mere til slutt
+foo
