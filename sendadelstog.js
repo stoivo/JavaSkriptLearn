@@ -15,4 +15,4 @@ var arrat = string.split(" ");
 var time = arrat[arrat.length-1]
 
 
-console.log
+console.log("Simon")
